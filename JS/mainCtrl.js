@@ -5,8 +5,9 @@ angular.module('friendsList').controller('mainCtrl', function($scope){
     $scope.addFriend = function(name){
         
         var person = {
-            name: name;
-        }   
+            name: name
+        }; 
+        $scope.friends.push(person); 
     }
 
 });
